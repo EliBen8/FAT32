@@ -44,6 +44,11 @@ You have two options to compile and run the program: using the Makefile or using
 1. `gcc -o filesys filesys.c`
 2. `./filesys fat32.img`
 
+## Known Bugs
+The only known bug occurs when using `cd ..`. 'cd' works correctly, allowing you to move through directories. However,
+when using `cd ..` it will appear as if you are returning to the previous directory, but it instead takes you to the 
+starting directory. Besides this, every command works as specified.
+
 ## Additional Notes
 
 - The program is designed to interact with FAT32 image files.
